@@ -18,17 +18,18 @@
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
 
     <!-- Put here your site title -->
-    <title>[Your name here] | Developer</title>
+    <title>Ashutosh Kokam | Full Stack Developer</title>
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
+    <meta name="keywords" content="mi_ashutosh, Ashutosh Kokam, Angular" />
     <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+    <meta name="description" content="Ashutosh Kokam | Full Stack Developer" />
 
     <!-- Required librarys -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" src="./style/index.css"/>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
       ScrollReveal({ reset: false });
@@ -36,6 +37,104 @@
 
     <!-- Remove this script once you setup your custom portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script async defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: block;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<script>
+  $(document).ready(function(){
+
+showSlides();
+  })
+
+
+function showSlides() {
+  var i;
+  var slideIndex = 0;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
   </head>
 
   <!-- Follow the HTML instructions to create your stunning portfolio website -->
@@ -46,9 +145,9 @@
     <div id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title" class="load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+          Hi, my name is <span class="text-color-main"><span class="ltbrac">&lt;</span>Ashutosh/<span class="gtbrac">&gt;</span></span>
           <br />
-          I'm the Unknown Developer.
+          I'm the Full Stack Developer.
         </h1>
         <p class="hero-cta" class="load-hidden">
           <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
@@ -78,19 +177,15 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info">
               <p class="about-wrapper__info-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Excepturi neque, ipsa animi maiores repellendu distinctioaperiam
-                earum dolor voluptatum consequatur blanditiis inventore debitis
-                fuga numquam voluptate architecto itaque molestiae.
-              </p>
-              <p class="about-wrapper__info-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Excepturi neque, ipsa animi maiores repellendu distinctioaperiam
-                earum dolor voluptatum consequatur blanditiis inventore debitis
-                fuga numquam voluptate architecto itaque molestiae.
-              </p>
+                Experienced Senior Software Engineer with a demonstrated history of working in the banking industry. 
+                Skilled in Angular, SQL Server, DotNetCore WebAPI, C#, jQuery, and ASP.NET AJAX. 
+                Strong engineering professional with a Bachelor of Engineering - BE 
+                focused in Computer Engineering from 
+                University of Mumbai. 
+                </p>
+              
               <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="#!">
+                <a  class="cta-btn cta-btn--resume" href="assets/AshutoshKokam_2020.pdf" download>
                   View Resume
                 </a>
               </span>
@@ -109,11 +204,11 @@
             Projects
           </h2>
 
-          <!-- Each .row is a project -->
+             <!-- Each .row is a project -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
+                <h3 class="project-wrapper__text-title">D-Square Academy</h3>
                 <div>
                   <p class="mb-4">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -123,19 +218,19 @@
                     itaque molestiae.
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                <a target="_blank" class="cta-btn cta-btn--hero" href="http://www.dsquareacademy.com/#/dashboard">
                   See Live
                 </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
+                <!-- <a target="_blank" class="cta-btn text-color-main" href="#!">
                   Source Code
-                </a>
+                </a> -->
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
                 <a href="#!" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
+                    <img class="img-fluid" src="./assets/project_0.jpeg" />
                   </div>
                 </a>
               </div>
@@ -147,7 +242,7 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
+                <h3 class="project-wrapper__text-title">Books Blogger</h3>
                 <div>
                   <p class="mb-4">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -157,19 +252,19 @@
                     itaque molestiae.
                   </p>
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://bookishsaaya.netlify.app/home">
                   See Live
                 </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
+                <!-- <a target="_blank" class="cta-btn text-color-main" href="#!">
                   Source Code
-                </a>
+                </a> -->
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
                 <a href="#!" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
+                    <img class="img-fluid" src="./assets/project_1.jpeg" />
                   </div>
                 </a>
               </div>
@@ -178,7 +273,7 @@
           <!-- /END Project -->
 
           <!-- Each .row is a project -->
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
                 <h3 class="project-wrapper__text-title">Project Title</h3>
@@ -208,7 +303,7 @@
                 </a>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- /END Project -->
         </div>
       </div>
@@ -223,13 +318,26 @@
         </h2>
         <div class="contact-wrapper">
           <p class="contact-wrapper__text">
-            [Put your call to action here]
+         <!-- <button class="card">
+  <div class="row clearfix">
+    <div class="left big">212 555 6342</div>
+    <div class="right"><p><span class="big">P</span>ierce &amp; <span class="big">P</span>ierce</p><p><span class="med no-space">M</span><span class="small no-space">ergers and </span><span class="med no-space">A</span><span class="small no-space">cquisitions</span></p></div>
+  </div>
+  <div class="row">
+    <p><span class="big">P</span>atrick <span class="big">Bateman</span></p>
+    <p><span class="big">V</span>ice <span class="big">P</span>resident</p>
+  </div>
+  <div class="row">
+    <p><span class="med">358 E</span><span class="small">xchange </span><span class="med">P</span><span class="small">lace </span><span class="med">N</span><span class="small">ew </span><span class="med">Y</span><span class="small">ork</span><span class="med">, N. Y. 10099 F</span><span class="small">ax </span><span class="med">212 555 6390 T</span><span class="small">elex </span><span class="med">10 4534</span>
+    </p>
+  </div>
+</button> -->
           </p>
           <a
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
+            href="mailto:ashutoshkokam@outlook.com"
+            >Click to connect</a
           >
         </div>
       </div>
@@ -243,16 +351,16 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a href="#!" target="_blank">
+          <a href="https://twitter.com/ashutosh_vk" target="_blank">
             <i class="fa fa-twitter fa-inverse"></i>
           </a>
-          <a href="#!" target="_blank">
+          <!-- <a href="#!" target="_blank">
             <i class="fa fa-codepen fa-inverse"></i>
-          </a>
-          <a href="#!" target="_blank">
+          </a> -->
+          <a href="https://www.linkedin.com/in/ashutoshkokam/" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a href="#!" target="_blank">
+          <a href="https://github.com/ashutoshkokam" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
@@ -261,12 +369,12 @@
 
         <!-- If you give me some credit, will be huge for me :) -->
         <p class="footer__text">
-          © 2020 - Template developed by <a href="https://github.com/cobidev" target="_blank">Jacobo Martínez</a>
+          © 2020 - <a href="https://github.com/ashutoshkokam" target="_blank">Ashutosh Kokam</a>
           </a>
         </p>
 
         <!-- Remove this paragraph once you setup your custom portfolio -->
-        <p class="mt-3 pt-3">
+        <!-- <p class="mt-3 pt-3">
           <a
             class="github-button"
             href="https://github.com/cobidev/simplefolio/fork"
@@ -285,7 +393,7 @@
             aria-label="Star cobidev/simplefolio on GitHub"
             >Star</a
           >
-        </p>
+        </p> -->
       </div>
     </footer>
     <!-- /END Footer Section -->
