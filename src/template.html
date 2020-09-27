@@ -11,284 +11,358 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
 
-    <!-- Put here your site title -->
-    <title>Ashutosh Kokam | Full Stack Developer</title>
-    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="mi_ashutosh, Ashutosh Kokam, Angular" />
-    <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="Ashutosh Kokam | Full Stack Developer" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
 
-    <!-- Required librarys -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" src="./style/index.css"/>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      ScrollReveal({ reset: false });
-    </script>
+  <!-- Put here your site title -->
+  <title>Ashutosh Kokam | Full Stack Developer</title>
+  <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+  <meta name="keywords" content="mi_ashutosh, Ashutosh Kokam, Angular" />
+  <!-- Improve your SEO by adding a small descrption of you -->
+  <meta name="description" content="Ashutosh Kokam | Full Stack Developer" />
 
-    <!-- Remove this script once you setup your custom portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <script async defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <style>
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: block;}
-img {vertical-align: middle;}
+  <!-- Required librarys -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" src="./style/index.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({
+      reset: false
+    });
+  </script>
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
+  <!-- Remove this script once you setup your custom portfolio -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script async defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
+    body {
+      font-family: Verdana, sans-serif;
+    }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+    .mySlides {
+      display: block;
+    }
 
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
+    img {
+      vertical-align: middle;
+    }
 
-.active {
-  background-color: #717171;
-}
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-</style>
-<script>
-  $(document).ready(function(){
+    .active {
+      background-color: #717171;
+    }
 
-showSlides();
-  })
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {
+        font-size: 11px
+      }
+    }
+  </style>
+  <script>
+    $(document).ready(function () {
+
+      showSlides();
+    })
 
 
-function showSlides() {
-  var i;
-  var slideIndex = 0;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
+    function showSlides() {
+      var i;
+      var slideIndex = 0;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
 
-  </head>
+</head>
 
-  <!-- Follow the HTML instructions to create your stunning portfolio website -->
-  <body>
-    <div id="top"></div>
+<!-- Follow the HTML instructions to create your stunning portfolio website -->
 
-    <!-- **** Hero Section **** -->
-    <div id="hero" class="jumbotron">
-      <div class="container">
-        <h1 class="hero-title" class="load-hidden">
-          Hi, my name is <span class="text-color-main"><span class="ltbrac">&lt;</span>Ashutosh/<span class="gtbrac">&gt;</span></span>
-          <br />
-          I'm the Full Stack Developer.
-        </h1>
-        <p class="hero-cta" class="load-hidden">
-          <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
-        </p>
-      </div>
+<body>
+  <div id="top"></div>
+
+  <!-- **** Hero Section **** -->
+  <div id="hero" class="jumbotron">
+    <div class="container">
+      <h1 class="hero-title" class="load-hidden">
+        Hi, my name is <span class="text-color-main"><span class="ltbrac">&lt;</span>Ashutosh/<span
+            class="gtbrac">&gt;</span></span>
+        <br />
+        I'm the Full Stack Developer.
+      </h1>
+      <p class="hero-cta" class="load-hidden">
+        <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
+      </p>
     </div>
-    <!-- /END Hero Section -->
+  </div>
+  <!-- /END Hero Section -->
 
-    <!-- **** About Section **** -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">
-          About me
-        </h2>
-        <div class="row about-wrapper">
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image">
-              <img
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="./assets/profile.jpg"
-                alt="Profile Image"
-              />
-            </div>
+  <!-- **** About Section **** -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">
+        About me
+      </h2>
+      <div class="row about-wrapper">
+        <div class="col-md-6 col-sm-12">
+          <div class="about-wrapper__image">
+            <img class="img-fluid rounded shadow-lg" height="auto" width="300px" src="./assets/profile.jpg"
+              alt="Profile Image" />
           </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info">
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              Experienced Senior Software Engineer with a demonstrated history of working in the banking industry.
+              Skilled in Angular, SQL Server, DotNetCore WebAPI, C#, jQuery, and ASP.NET AJAX.
+              Strong engineering professional with a Bachelor of Engineering - BE
+              focused in Computer Engineering from
+              University of Mumbai.
+              <hr>
               <p class="about-wrapper__info-text">
-                Experienced Senior Software Engineer with a demonstrated history of working in the banking industry. 
-                Skilled in Angular, SQL Server, DotNetCore WebAPI, C#, jQuery, and ASP.NET AJAX. 
-                Strong engineering professional with a Bachelor of Engineering - BE 
-                focused in Computer Engineering from 
-                University of Mumbai. 
-                </p>
-              
-              <span class="d-flex mt-3">
-                <a  class="cta-btn cta-btn--resume" href="https://github.com/ashutoshkokam/my-portfolio/blob/master/src/assets/AshutoshKokam_2020.pdf" download>
-                  View Resume
-                </a>
-                                <!-- <a  class="cta-btn cta-btn--resume" 
+                <span class="badge badge-pill badge-light">Full Stack Developer</span>
+                <span class="badge badge-pill badge-light">Angular</span>
+                <span class="badge badge-pill badge-light">Typescript</span>
+                <span class="badge badge-pill badge-light">NGRX</span>
+                <span class="badge badge-pill badge-light">LINQ</span>
+                <span class="badge badge-pill badge-light">NodeJS</span>
+                <span class="badge badge-pill badge-light">.NET Core</span>
+                <span class="badge badge-pill badge-light">REST</span>
+                <span class="badge badge-pill badge-light">API</span>
+                <span class="badge badge-pill badge-light">C#</span>
+                <span class="badge badge-pill badge-light">MVC</span>
+                <span class="badge badge-pill badge-light">AWS</span>
+                <span class="badge badge-pill badge-light">NestJS</span>
+                <span class="badge badge-pill badge-light">BitBucket</span>
+                <span class="badge badge-pill badge-light">Git</span>
+                <span class="badge badge-pill badge-light">TFS</span>
+              </p>
+
+            </p>
+
+            <span class="d-flex mt-3">
+              <a class="cta-btn cta-btn--resume"
+                href="https://github.com/ashutoshkokam/my-portfolio/blob/master/src/assets/AshutoshKokam_2020.pdf"
+                download>
+                View Resume
+              </a>
+              <!-- <a  class="cta-btn cta-btn--resume" 
                                 href="https://mydevportfoliobucket.s3.ap-south-1.amazonaws.com/AshutoshKokam_2020.pdf" download>
                   View Resume
                 </a> -->
-              </span>
-            </div>
+            </span>
           </div>
         </div>
       </div>
-    </section>
-    <!-- /END About Section -->
+    </div>
+  </section>
+  <!-- /END About Section -->
 
-    <!-- **** Projects Section **** -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">
-            Projects
-          </h2>
+  <!-- **** Projects Section **** -->
+  <section id="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">
+          Projects
+        </h2>
 
-             <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">D-Square Academy</h3>
-                <div>
-                  <p class="mb-4">
-                   Developed as an educatoinal website with liberty to showcase the 
-                   wide variety of tutorials and educational content for engineering students.
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">D-Square Academy</h3>
+              <div>
+                <p class="mb-4">
+                  Developed as an educational website with liberty to showcase the
+                  wide variety of tutorials and educational content for engineering students.
+                  <br>
+                  <br>
+
+                  Tech Stack :
+
+                  <br>
+                  <span class="badge badge-pill badge-info">Angular 9.x</span>
+                  <span class="badge badge-pill badge-info">NestJS</span>
+                  <span class="badge badge-pill badge-info">Express</span>
+                  <span class="badge badge-pill badge-info">MongoDB 4.2.x</span>
+                  <span class="badge badge-pill badge-info">Angular Material</span>
+                  <br>
+                  <br>
+
+                  Hosted via :
+
+                  <br>
+
+                  <span class="badge badge-pill badge-info">AWS ElasticBeanStalk</span>
+                  <span class="badge badge-pill badge-info">AWS S3</span>
+                  <span class="badge badge-pill badge-info">AWS Cloudwatch</span>
+
+                  <br>
+
+                </p>
+
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero" href="http://www.dsquareacademy.com/#/dashboard">
+                See Live
+              </a>
+              <!-- <a target="_blank" class="cta-btn text-color-main" href="#!">
+                  Source Code
+                </a> -->
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="#!" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/project_0.jpeg" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Books Blogger</h3>
+              <div>
+                <p class="mb-4">
+                  It's basically used to blog or post a review about the books.
                    <br>
-                  <em class="mb-4"> <h6>Tech Stack:</h6> </em>
-                   <ul class="mb-4">
-<li >Angular 9.x</li>
-<li>NestJS</li>
-<li>MongoDB 4.2.x</li>
-<li>Angular Material</li>
-</ul>
-                  </p>
+                  <br>
+
+                  Tech Stack :
+
+                  <br>
+                  <span class="badge badge-pill badge-info">Angular 9.x</span>
+                  <span class="badge badge-pill badge-info">NodeJS 12.x</span>
+                  <span class="badge badge-pill badge-info">Express</span>
+                  <span class="badge badge-pill badge-info">MongoDB 4.2.x</span>
+                  <span class="badge badge-pill badge-info">Angular Material</span>
+                  <br>
+                  <br>
+
+                  Hosted via :
+
+                  <br>
+
+                  <span class="badge badge-pill badge-info">Heroku</span>
+                  <span class="badge badge-pill badge-info">Netlify</span>
+
+                  <br>
              
-                </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="http://www.dsquareacademy.com/#/dashboard">
-                  See Live
-                </a>
-                <!-- <a target="_blank" class="cta-btn text-color-main" href="#!">
+                </p>
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero" href="https://bookishsaaya.netlify.app/home">
+                See Live
+              </a>
+              <!-- <a target="_blank" class="cta-btn text-color-main" href="#!">
                   Source Code
                 </a> -->
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project_0.jpeg" />
-                  </div>
-                </a>
-              </div>
             </div>
           </div>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Books Blogger</h3>
-                <div>
-                  <p class="mb-4">
-                    It's basically used to blog or post a review about the books.
-                      <br>
-                  <em class="mb-4"> <h6>Tech Stack:</h6> </em>
-                   <ul class="mb-4">
-<li >Angular 9.x</li>
-<li>NodeJS 12.x</li>
-<li>Express</li>
-<li>MongoDB 4.2.x</li>
-<li>Angular Material</li>
-</ul>
-                  </p>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="#!" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/project_1.jpeg" />
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="https://bookishsaaya.netlify.app/home">
-                  See Live
-                </a>
-                <!-- <a target="_blank" class="cta-btn text-color-main" href="#!">
-                  Source Code
-                </a> -->
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project_1.jpeg" />
-                  </div>
-                </a>
-              </div>
+              </a>
             </div>
           </div>
-          <!-- /END Project -->
+        </div>
+        <!-- /END Project -->
 
-          <!-- Each .row is a project -->
-          <!-- <div class="row">
+        <!-- Each .row is a project -->
+        <!-- <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
                 <h3 class="project-wrapper__text-title">Project Title</h3>
@@ -319,21 +393,21 @@ function showSlides() {
               </div>
             </div>
           </div> -->
-          <!-- /END Project -->
-        </div>
+        <!-- /END Project -->
       </div>
-    </section>
-    <!-- /END Projects Section -->
+    </div>
+  </section>
+  <!-- /END Projects Section -->
 
-    <!-- **** Contact Section **** -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">
-          Contact
-        </h2>
-        <div class="contact-wrapper">
-          <p class="contact-wrapper__text">
-         <!-- <button class="card">
+  <!-- **** Contact Section **** -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">
+        Contact
+      </h2>
+      <div class="contact-wrapper">
+        <p class="contact-wrapper__text">
+          <!-- <button class="card">
   <div class="row clearfix">
     <div class="left big">212 555 6342</div>
     <div class="right"><p><span class="big">P</span>ierce &amp; <span class="big">P</span>ierce</p><p><span class="med no-space">M</span><span class="small no-space">ergers and </span><span class="med no-space">A</span><span class="small no-space">cquisitions</span></p></div>
@@ -347,49 +421,44 @@ function showSlides() {
     </p>
   </div>
 </button> -->
-          </p>
-          <a
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:ashutoshkokam@outlook.com"
-            >Click to connect</a
-          >
-        </div>
+        </p>
+        <a target="_blank" class="cta-btn cta-btn--resume" href="mailto:ashutoshkokam@outlook.com">Click to connect</a>
       </div>
-    </section>
-    <!-- /END Contact Section -->
+    </div>
+  </section>
+  <!-- /END Contact Section -->
 
-    <!-- **** Footer Section **** -->
-    <footer class="footer navbar-static-bottom">
-      <div class="container">
-        <a href="#top" class="back-to-top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+  <!-- **** Footer Section **** -->
+  <footer class="footer navbar-static-bottom">
+    <div class="container">
+      <a href="#top" class="back-to-top">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      </a>
+      <div class="social-links">
+        <a href="https://twitter.com/ashutosh_vk" target="_blank">
+          <i class="fa fa-twitter fa-inverse"></i>
         </a>
-        <div class="social-links">
-          <a href="https://twitter.com/ashutosh_vk" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <!-- <a href="#!" target="_blank">
+        <!-- <a href="#!" target="_blank">
             <i class="fa fa-codepen fa-inverse"></i>
           </a> -->
-          <a href="https://www.linkedin.com/in/ashutoshkokam/" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
-          </a>
-          <a href="https://github.com/ashutoshkokam" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
-          </a>
-        </div>
+        <a href="https://www.linkedin.com/in/ashutoshkokam/" target="_blank">
+          <i class="fa fa-linkedin fa-inverse"></i>
+        </a>
+        <a href="https://github.com/ashutoshkokam" target="_blank">
+          <i class="fa fa-github fa-inverse"></i>
+        </a>
+      </div>
 
-        <hr />
+      <hr />
 
-        <!-- If you give me some credit, will be huge for me :) -->
-        <p class="footer__text">
-          © 2020 - <a href="https://github.com/ashutoshkokam" target="_blank">Ashutosh Kokam</a>
-          </a>
-        </p>
+      <!-- If you give me some credit, will be huge for me :) -->
+      <p class="footer__text">
+        © 2020 - <a href="https://github.com/ashutoshkokam" target="_blank">Ashutosh Kokam</a>
+        </a>
+      </p>
 
-        <!-- Remove this paragraph once you setup your custom portfolio -->
-        <!-- <p class="mt-3 pt-3">
+      <!-- Remove this paragraph once you setup your custom portfolio -->
+      <!-- <p class="mt-3 pt-3">
           <a
             class="github-button"
             href="https://github.com/cobidev/simplefolio/fork"
@@ -409,8 +478,9 @@ function showSlides() {
             >Star</a
           >
         </p> -->
-      </div>
-    </footer>
-    <!-- /END Footer Section -->
-  </body>
+    </div>
+  </footer>
+  <!-- /END Footer Section -->
+</body>
+
 </html>
